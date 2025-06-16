@@ -25,11 +25,11 @@
 
 Введите следующие команды:
 ```shell
-import el_diary_hack.py
+import el_diary_hack
 schoolkid = el_diary_hack.get_schoolkid('имя_ученика')
-el_diary_hack.fix_mark(schoolkid)
+el_diary_hack.fix_marks(schoolkid)
 el_diary_hack.remove_chastisements(schoolkid)
-el_diary_hack.create_commendation(schoolkid)
+el_diary_hack.create_commendation(schoolkid, el_diary_hack.COMMENDATIONS)
 ```
 
 ## Цели проекта
