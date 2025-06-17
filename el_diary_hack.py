@@ -73,7 +73,7 @@ def create_commendation(schoolkid, commendations):
             subject__title=subject
         ).order_by('date').last()
 
-        if last_lesson is None:
+        if not last_lesson:
             raise Lesson.DoesNotExist
     except Lesson.DoesNotExist:
         print('Урок не найден, попробуйте вызвать функцию еще раз.')
